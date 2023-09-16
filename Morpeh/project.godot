@@ -11,7 +11,7 @@ config_version=5
 [application]
 
 config/name="Morpeh"
-config/features=PackedStringArray("4.1", "Mobile")
+config/features=PackedStringArray("4.1", "C#", "Mobile")
 config/icon="res://icon.svg"
 
 [dotnet]
