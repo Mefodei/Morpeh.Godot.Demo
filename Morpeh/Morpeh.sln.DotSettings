@@ -1,0 +1,46 @@
+﻿<wpf:ResourceDictionary xml:space="preserve" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:s="clr-namespace:System;assembly=mscorlib" xmlns:ss="urn:shemas-jetbrains-com:settings-storage-xaml" xmlns:wpf="http://schemas.microsoft.com/winfx/2006/xaml/presentation">
+	<s:Boolean x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=0ED30FBA6E58D64D8E2CC8A88CE4795F/@KeyIndexDefined">True</s:Boolean>
+	<s:Boolean x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=0ED30FBA6E58D64D8E2CC8A88CE4795F/Applicability/=File/@EntryIndexedValue">True</s:Boolean>
+	<s:String x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=0ED30FBA6E58D64D8E2CC8A88CE4795F/CustomProperties/=Category/@EntryIndexedValue">Primary</s:String>
+	<s:String x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=0ED30FBA6E58D64D8E2CC8A88CE4795F/CustomProperties/=Extension/@EntryIndexedValue">cs</s:String>
+	<s:String x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=0ED30FBA6E58D64D8E2CC8A88CE4795F/CustomProperties/=FileName/@EntryIndexedValue">TempComponent</s:String>
+	<s:String x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=0ED30FBA6E58D64D8E2CC8A88CE4795F/CustomProperties/=ValidateFileName/@EntryIndexedValue">True</s:String>
+	<s:String x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=0ED30FBA6E58D64D8E2CC8A88CE4795F/Description/@EntryValue">&amp;Component</s:String>
+	<s:String x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=0ED30FBA6E58D64D8E2CC8A88CE4795F/Image/@EntryValue">CSharp</s:String>
+	<s:Boolean x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=0ED30FBA6E58D64D8E2CC8A88CE4795F/Reformat/@EntryValue">True</s:Boolean>
+	<s:Boolean x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=0ED30FBA6E58D64D8E2CC8A88CE4795F/ShortenQualifiedReferences/@EntryValue">True</s:Boolean>
+	<s:String x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=0ED30FBA6E58D64D8E2CC8A88CE4795F/Text/@EntryValue">namespace $NAMESPACE$;
+
+using Scellecs.Morpeh;
+using Unity.IL2CPP.CompilerServices;
+
+[Il2CppSetOption(Option.NullChecks, false)]
+[Il2CppSetOption(Option.ArrayBoundsChecks, false)]
+[Il2CppSetOption(Option.DivideByZeroChecks, false)]
+[System.Serializable]
+public struct $STRUCT$ : IComponent 
+{
+
+}</s:String>
+	<s:String x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=0ED30FBA6E58D64D8E2CC8A88CE4795F/UITag/@EntryValue">Morpeh/Component</s:String>
+	<s:Boolean x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=0ED30FBA6E58D64D8E2CC8A88CE4795F/Field/=HEADER/@KeyIndexDefined">False</s:Boolean>
+	
+	
+	<s:Boolean x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=0ED30FBA6E58D64D8E2CC8A88CE4795F/Field/=NAMESPACE/@KeyIndexDefined">True</s:Boolean>
+	<s:String x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=0ED30FBA6E58D64D8E2CC8A88CE4795F/Field/=NAMESPACE/Expression/@EntryValue">fileDefaultNamespace()</s:String>
+	<s:Int64 x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=0ED30FBA6E58D64D8E2CC8A88CE4795F/Field/=NAMESPACE/InitialRange/@EntryValue">-1</s:Int64>
+	<s:Int64 x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=0ED30FBA6E58D64D8E2CC8A88CE4795F/Field/=NAMESPACE/Order/@EntryValue">0</s:Int64>
+	<s:Boolean x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=0ED30FBA6E58D64D8E2CC8A88CE4795F/Field/=STRUCT/@KeyIndexDefined">True</s:Boolean>
+	<s:String x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=0ED30FBA6E58D64D8E2CC8A88CE4795F/Field/=STRUCT/Expression/@EntryValue">getAlphaNumericFileNameWithoutExtension()</s:String>
+	<s:Int64 x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=0ED30FBA6E58D64D8E2CC8A88CE4795F/Field/=STRUCT/InitialRange/@EntryValue">0</s:Int64>
+	<s:Int64 x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=0ED30FBA6E58D64D8E2CC8A88CE4795F/Field/=STRUCT/Order/@EntryValue">1</s:Int64>
+	<s:Boolean x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=0ED30FBA6E58D64D8E2CC8A88CE4795F/Scope/=E8F0594528C33E45BBFEC6CFE851095D/@KeyIndexDefined">True</s:Boolean>
+	<s:String x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=0ED30FBA6E58D64D8E2CC8A88CE4795F/Scope/=E8F0594528C33E45BBFEC6CFE851095D/Type/@EntryValue">InCSharpProjectFile</s:String>
+	<s:Boolean x:Key="/Default/PatternsAndTemplates/LiveTemplates/QuickList/=F0CA621CDF5AB24282D8CDC11C520997/@KeyIndexDefined">True</s:Boolean>
+	<s:Boolean x:Key="/Default/PatternsAndTemplates/LiveTemplates/QuickList/=F0CA621CDF5AB24282D8CDC11C520997/Entry/=0ED30FBA6E58D64D8E2CC8A88CE4795F/@KeyIndexDefined">True</s:Boolean>
+	<s:String x:Key="/Default/PatternsAndTemplates/LiveTemplates/QuickList/=F0CA621CDF5AB24282D8CDC11C520997/Entry/=0ED30FBA6E58D64D8E2CC8A88CE4795F/EntryName/@EntryValue">Struct</s:String>
+	<s:Int64 x:Key="/Default/PatternsAndTemplates/LiveTemplates/QuickList/=F0CA621CDF5AB24282D8CDC11C520997/Entry/=0ED30FBA6E58D64D8E2CC8A88CE4795F/Position/@EntryValue">10</s:Int64>
+	<s:Int64 x:Key="/Default/PatternsAndTemplates/LiveTemplates/QuickList/=F0CA621CDF5AB24282D8CDC11C520997/Entry/=2CBD6971A7955044AD2624B84FB49E38/Position/@EntryValue">9</s:Int64>
+	<s:Int64 x:Key="/Default/PatternsAndTemplates/LiveTemplates/QuickList/=F0CA621CDF5AB24282D8CDC11C520997/Entry/=567DCF4B487C244A9F6BB46E4E9F3B84/Position/@EntryValue">6</s:Int64>
+	<s:Int64 x:Key="/Default/PatternsAndTemplates/LiveTemplates/QuickList/=F0CA621CDF5AB24282D8CDC11C520997/Entry/=7F2A1BE8D0078241A9AE7802038BAD3C/Position/@EntryValue">7</s:Int64>
+	<s:Int64 x:Key="/Default/PatternsAndTemplates/LiveTemplates/QuickList/=F0CA621CDF5AB24282D8CDC11C520997/Entry/=C4795E57DDEC1C4F97BBC8C7173EBBCA/Position/@EntryValue">8</s:Int64></wpf:ResourceDictionary>
