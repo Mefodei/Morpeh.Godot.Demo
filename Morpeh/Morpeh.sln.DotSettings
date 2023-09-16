@@ -70,6 +70,7 @@ public struct $STRUCT$ : IComponent
 	<s:Boolean x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=8619041F063DAD4F8829BE2216F8263A/ShortenQualifiedReferences/@EntryValue">True</s:Boolean>
 	<s:String x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=8619041F063DAD4F8829BE2216F8263A/Text/@EntryValue">namespace $NAMESPACE$;
 
+using System;
 using Scellecs.Morpeh;
 using Shared.Systems;
 using Unity.IL2CPP.CompilerServices;
@@ -77,6 +78,7 @@ using Unity.IL2CPP.CompilerServices;
 [Il2CppSetOption(Option.NullChecks, false)]
 [Il2CppSetOption(Option.ArrayBoundsChecks, false)]
 [Il2CppSetOption(Option.DivideByZeroChecks, false)]
+[Serializable]
 public sealed class $CLASS$ : UpdateSystem 
 {
     public override void OnAwake() 

@@ -3,15 +3,23 @@
 using System;
 using System.Collections.Generic;
 using Abstract;
+using DemoMovement;
 using Godot;
 using Scellecs.Morpeh;
 
 [Serializable]
 public class MorpehBootstrap : IDisposable 
 {
-    private List<IMorpehFeature> _features = new List<IMorpehFeature>();
+    private List<IMorpehFeature> _features = new List<IMorpehFeature>()
+    {
+        new DemoMovementFeature(),
+        new DemoRotationFeature()
+    };
+    
     private World _world;
 
+    public World World { get; set; }
+    
     #region public methods
     
     public void Update(double delta)
@@ -43,6 +51,7 @@ public class MorpehBootstrap : IDisposable
         _world = World.Create();
         _world.UpdateByUnity = false;
 
+        World = _world;
         InitializeSystems(_world);
     }
     
@@ -50,7 +59,10 @@ public class MorpehBootstrap : IDisposable
 
     private void InitializeSystems(World world)
     {
-        
+        foreach (var morpehFeature in _features)
+        {
+            morpehFeature.Register(world);
+        }
     }
 
 }

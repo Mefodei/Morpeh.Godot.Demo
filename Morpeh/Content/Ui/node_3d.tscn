@@ -1,7 +1,18 @@
-[gd_scene format=3 uid="uid://bnujsxqabfj0l"]
+[gd_scene load_steps=3 format=3 uid="uid://bnujsxqabfj0l"]
+
+[ext_resource type="Script" path="res://Runtime/Nodes/BootstrapNode.cs" id="1_nlqwc"]
+[ext_resource type="PackedScene" uid="uid://ba6dbt3yd8141" path="res://Content/Objects/csg_box_3d.tscn" id="2_5ghs7"]
 
 [node name="Node3D" type="Node3D"]
+script = ExtResource("1_nlqwc")
+amount = 10000
+item = ExtResource("2_5ghs7")
 
-[node name="Window" type="Window" parent="."]
-initial_position = 1
-size = Vector2i(300, 300)
+[node name="Camera3D" type="Camera3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 120)
+fov = 92.4332
+
+[node name="CSGBox3D" parent="." instance=ExtResource("2_5ghs7")]
+
+[node name="DirectionalLight3D" type="DirectionalLight3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 0.758669, 0.651476, 0, -0.651476, 0.758669, 0, 16.9326, 25.9443)
