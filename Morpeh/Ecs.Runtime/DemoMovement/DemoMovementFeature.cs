@@ -9,13 +9,14 @@ using Systems;
 [Serializable]
 public class DemoMovementFeature : IMorpehFeature
 {
-    public World Register(World world)
+    public World Register(World world,SystemsGroup group)
     {
-        var systemGroup = world.CreateSystemsGroup();
-        systemGroup.AddSystem(new UpdateMovementDirectionSystem());
-        systemGroup.AddSystem(new UpdateMovementPositionSystem());
-        systemGroup.AddSystem(new UpdateMovementDurationSystem());
+        group.AddSystem(new UpdateMovementDirectionSystem());
+        group.AddSystem(new UpdateMovementPositionSystem());
+        group.AddSystem(new UpdateMovementDurationSystem());
 
+        
+        
         return world;
     }
 }

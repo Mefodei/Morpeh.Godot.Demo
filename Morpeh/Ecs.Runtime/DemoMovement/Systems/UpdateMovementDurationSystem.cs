@@ -23,6 +23,9 @@ public sealed class UpdateMovementDurationSystem : UpdateSystem
             .With<DurationComponent>()
             .With<DemoMovementDataComponent>()
             .Build();
+        
+        _durationStash = World.GetStash<DurationComponent>();
+        _movementDurationStash = World.GetStash<DemoMovementDataComponent>();
     }
 
     public override void OnUpdate(float deltaTime)

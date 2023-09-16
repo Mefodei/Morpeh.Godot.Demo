@@ -27,6 +27,10 @@ public sealed class UpdateMovementPositionSystem : UpdateSystem
             .With<DemoMovementDataComponent>()
             .With<SpeedComponent>()
             .Build();
+        
+        _node3DStash = World.GetStash<Node3DComponent>();
+        _directionStash = World.GetStash<DirectionComponent>();
+        _speedStash = World.GetStash<SpeedComponent>();
     }
 
     public override void OnUpdate(float deltaTime)

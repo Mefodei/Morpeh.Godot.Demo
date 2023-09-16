@@ -25,10 +25,15 @@ public sealed class RotateDemoSystem : UpdateSystem
             .With<DemoRotationDataComponent>()
             .With<RotationComponent>()
             .Build();
+        
+        _nodeStash = World.GetStash<Node3DComponent>();
+        _rotationStash = World.GetStash<RotationComponent>();
+        _dataStash = World.GetStash<DemoRotationDataComponent>();
     }
 
     public override void OnUpdate(float deltaTime)
     {
+        return;
         foreach (var entity in _filter)
         {
             ref var nodeComponent = ref _nodeStash.Get(entity);

@@ -45,8 +45,7 @@ public class MorpehBootstrap : IDisposable
     
     public void Initialize()
     {
-        if(_world != null)
-            return;
+        if(_world != null) return;
         
         _world = World.Create();
         _world.UpdateByUnity = false;
@@ -59,10 +58,12 @@ public class MorpehBootstrap : IDisposable
 
     private void InitializeSystems(World world)
     {
+        var systemGroup = world.CreateSystemsGroup();
         foreach (var morpehFeature in _features)
         {
-            morpehFeature.Register(world);
+            morpehFeature.Register(world,systemGroup);
         }
+        world.AddSystemsGroup(order: 0, systemGroup);
     }
 
 }

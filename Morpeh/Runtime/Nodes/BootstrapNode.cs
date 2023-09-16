@@ -41,6 +41,7 @@ public partial class BootstrapNode : Node
 	{
 		_morpehBootstrap = new MorpehBootstrap();
 		_morpehBootstrap.Initialize();
+		_initialized = true;
 	}
 
 	private void InitializeEntities()

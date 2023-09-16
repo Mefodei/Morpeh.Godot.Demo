@@ -25,6 +25,10 @@ public sealed class UpdateMovementDirectionSystem : UpdateSystem
 			.With<DirectionComponent>()
 			.With<DemoMovementDataComponent>()
 			.Build();
+
+		_durationStash = World.GetStash<DurationComponent>();
+		_directionStash = World.GetStash<DirectionComponent>();
+		_movementDurationStash = World.GetStash<DemoMovementDataComponent>();
 	}
 
 	public override void OnUpdate(float deltaTime)
